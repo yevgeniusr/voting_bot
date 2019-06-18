@@ -1,5 +1,3 @@
-#! /usr/bin/python3.5
-
 import discord
 import creds
 
@@ -29,6 +27,7 @@ async def on_message(message):
         await message.add_reaction(emoji_thumbs_up)
         emoji_thumbs_down = '\N{THUMBS DOWN SIGN}'
         await message.add_reaction(emoji_thumbs_down)
+        await message.pin()
         
 @client.event
 async def on_ready():
