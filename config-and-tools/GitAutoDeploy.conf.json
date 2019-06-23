@@ -1,0 +1,10 @@
+{
+  "port": 8001,
+  "repositories":
+  [{
+    "url": "https://github.com/PifagorRZ/voting_bot",
+    "path": "/srv/projects/voting-bot/",
+    "deploy": "bash /home/auto-deployer/voting-bot-deploy.sh",
+    "branch": "refs/heads/master"
+  }]
+}

@@ -1,2 +1,1 @@
-Python: Python 3.5+
-Discord.py: 1.2.2
+discord.py>=1.2.2
