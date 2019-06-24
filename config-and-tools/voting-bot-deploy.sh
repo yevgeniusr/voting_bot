@@ -1,6 +1,7 @@
 #!/bin/bash
 
-PROJECT_DIR=/srv/projects/voting-bot/
+PROJECT_DIR=/srv/projects/voting_bot/
+VIRTUAL_ENV_NAME="voting-bot"
 BOT_FILE="voting-bot.py"
 
 # git pull in the server workspace dir
@@ -9,10 +10,10 @@ git pull
 
 # enable virtualenv (called 'discord-bot') for discord-bot
 source /home/auto-deployer/.local/bin/virtualenvwrapper.sh
-workon voting-bot
+workon ${VIRTUAL_ENV_NAME}
 
 # restart discord-bot
-pid=$(pgrep -f discord-bot.py)
+pid=$(pgrep -f ${BOT_FILE})
 echo "pid of discord bot to kill: ${pid}"
 
 

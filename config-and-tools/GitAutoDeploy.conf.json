@@ -3,7 +3,7 @@
   "repositories":
   [{
     "url": "https://github.com/PifagorRZ/voting_bot",
-    "path": "/srv/projects/voting-bot/",
+    "path": "/srv/projects/voting_bot/",
     "deploy": "bash /home/auto-deployer/voting-bot-deploy.sh",
     "branch": "refs/heads/master"
   }]
