@@ -11,11 +11,14 @@ You need Python 3.5+ for this. The `discord.py` library used in this project doe
 
 Create a file called `creds.py` in the same directory as `voting-bot.py`.
 
-Add a line with your discord bot token like this:
+Add a line to `creds.py` with your discord bot token like this:
 
 ```python
 bot_token = "YOUR_DISCORD_BOT_TOKEN_HERE"
 ```
+
+The `creds.py` file has obviously/deliberately not been pushed to GH for security reasons
+(it's' been added to the `.gitignore` so it won't be pushed).
 
 To get the actual, correct bot token value, ask anyone on the Discord server,
 preferably *theratulz* or *KnifeAndFawkes* or *anattaguy*.
@@ -28,7 +31,7 @@ Create a [VirtualEnvironment](https://docs.python-guide.org/dev/virtualenvs/#low
 pip install -r requirements.txt
 ```
 
-This will install the `discord.py` module into the virutal environment.
+This will install the `discord.py` module into the virtual environment.
 
 
 ### Run Forrest, Run!
